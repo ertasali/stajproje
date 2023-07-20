@@ -85,7 +85,7 @@ C:>node-red
 http://localhost:1880
 
 
-## After the installation The docker Desktop need to be installed. Here is the link that you can install through https://docs.docker.com/desktop/install/windows-install/
+After the installation The docker Desktop need to be installed. Here is the link that you can install through https://docs.docker.com/desktop/install/windows-install/
 
 After the installation of Docker, you need to connect from docker dektop to Ubuntu WSL 2. This is the path that you can do it.
 ```
