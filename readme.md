@@ -87,7 +87,7 @@ http://localhost:1880
 
 After the installation The docker Desktop need to be installed. Here is the link that you can install through https://docs.docker.com/desktop/install/windows-install/
 
-After the installation of Docker, you need to connect from docker dektop to Ubuntu WSL 2. This is the path that you can do it.
+After the installation of Docker, you need to connect from docker desktop to Ubuntu WSL 2. This is the path that you can do it.
 ```
 Docker Desktop -> Settings -> Resources -> WSL Integration -> Select UBUNTU.
 ```
@@ -119,5 +119,5 @@ You can open Node-RED, InfluxDB and Grafana from the Docker Desktop and sign.
 
 The Node-Red that you installed to your Windows system is for sending a data to the Node-Red that is on docker local host. Therefore, open Windows powershell and run this command "node-red" after that Go to your browser and type "localhost:1880" to enter the Node-Red that is sender.
 
-Finally you can use the MQTT in out functions in Node-Red and send the data to the docker project and from that node-red using influx function of Node-Red you can send the data to the InfluxDB and finally from there you can send it to the Grafana and get Visualized data.
+Finally you can use the MQTT in out functions in Node-Red and send the data to the docker project and from that Node-RED using influxdb function of Node-Red you can send the data to the InfluxDB and finally from there you can send it to the Grafana and get Visualized data.
 
