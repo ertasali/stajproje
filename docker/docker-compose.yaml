@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  mqtt-broker:
+    container_name: mqtt
+    image: eclipse-mosquitto:latest
+    user: mosquitto
+    volumes:
+      - ./config/:/mosquitto/config/
+      - ./log/:/mosquitto/log/
+      - ./data/:/mosquitto/data/
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    networks:
+      - alinet
+
+  nodered:
+    container_name: nodered
+    image: nodered/node-red
+    ports:
+      - 8080:1880
+    volumes:
+      - ./nodered:/data
+    networks:
+      - alinet
+  influxdb:
+    container_name: influxdb  
+    image: influxdb
+    ports:
+      - 8086:8086
+    volumes:
+      - ./influxdb:/var/lib/influxdb
+    networks:
+      - alinet
+  grafana:
+    container_name: grafana
+    image: grafana/grafana-enterprise
+    restart: unless-stopped
+    ports:
+      - '3000:3000'
+    networks:
+      - alinet
+networks:
+    alinet:
+      driver: bridge
+    
