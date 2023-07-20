@@ -20,7 +20,7 @@
 
 # Now, the project installation can be start. If you are not using Visual Studio Code, I highly recommend it for this project and also in the future project of yours. Here is the link that you can install VS code https://code.visualstudio.com/download
 
-# Firstly, open the VS code and from left down corner, connect to WSL UBUNTU and open the project that you download from the GitHub. Open a new terminal and make sure your directory is in the docker file. After that run this command "docker compose up" to create the whole volume of you project in the docker. 
+# Firstly, open the VS code and from left down corner, connect to WSL UBUNTU and open the project that you download from the GitHub. Open a new terminal and make sure your directory is in the docker file. After that run this command in terminal "docker compose up" to create the whole volume of you project in the docker. 
 
 # The installation needs to be started. If you are having trouble any kind make sure you did the all steps right.
 
@@ -30,5 +30,5 @@
 
 # The Node-Red that you installed to your Windows system is for sending a data to the Node-Red that is on docker local host. Therefore, open Windows powershell and run this command "node-red" after that Go to your browser and type "localhost:1880" to enter the Node-Red that is sender.
 
-# Finally you can use the MQTT in out functions in Node-Red and send the data to the docker project and from that node-red using influx function of Node-Red you can send the data to the InfluxDB and finally from there you can send it to the Grafana and get Visual of any kind of data.
+# Finally you can use the MQTT in out functions in Node-Red and send the data to the docker project and from that node-red using influx function of Node-Red you can send the data to the InfluxDB and finally from there you can send it to the Grafana and get Visualized data.
 
