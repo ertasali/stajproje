@@ -95,7 +95,7 @@ Docker Desktop -> Settings -> Resources -> WSL Integration -> Select UBUNTU.
 
  Now, the project installation can be start. If you are not using Visual Studio Code, I highly recommend it for this project and also in the future project of yours. Here is the link that you can install VS code https://code.visualstudio.com/download
 
-# Firstly:
+## Firstly:
  Open the VS code and from left down corner, connect to WSL UBUNTU and open the project that you download from the GitHub.
  
 Open a new terminal and make sure your directory is in the docker file. After that run this command:
